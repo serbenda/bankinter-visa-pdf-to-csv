@@ -30,7 +30,6 @@
      ```bash
      sudo apt install tesseract-ocr
      ```
-   - 🪟 On Windows: Download from [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).  
 
 3. Install dependencies 📦:  
 
@@ -54,10 +53,10 @@ pip install .
 
 ## 🚀 Usage
 
-Use the pdf-to-csv command to process your Bankinter VISA statements 📄➡️📊:
+Use the bankinter-visa-extractor command to process your Bankinter VISA statements 📄➡️📊:
 
 ```bash
-pdf-to-csv <path_to_pdf> <path_to_csv>
+bankinter-visa-extractor <path_to_pdf> <path_to_csv>
 ```
 
 ### Example 📝
@@ -65,7 +64,7 @@ pdf-to-csv <path_to_pdf> <path_to_csv>
 Convert a Bankinter VISA statement named bank_statement.pdf into a CSV file called transactions.csv:
 
 ```bash
-pdf-to-csv bank_statement.pdf transactions.csv
+bankinter-visa-extractor bank_statement.pdf transactions.csv
 ```
 
 After running this command, the tool will extract all transaction data from the PDF and save it in the specified CSV file. The resulting CSV file can be opened in tools like Excel, Power BI, or other financial analysis software.
@@ -80,7 +79,7 @@ Here’s how your CSV will look:
 |---------------------|---------------|------------------------------------------|--------------|---------------|
 | 31/10/2024          | 1533          | SUMUP, SESENA                            | 15.00        |               |
 | 01/11/2024          | 1533          | ALGACA, S.L., SAN SEBASTIAN              | 4.11         |               |
-| 02/11/2024          | 1533          | PAYPAL *MAKSU 32040525, 35314369001      | 2.07         |               |
+| 02/11/2024          | 1533          | PAYPAL *MAKSU XXXXXXXX, XXXXXXXXXXX      | 2.07         |               |
 | 02/11/2024          | 1533          | AWS EMEA, aws.amazon.co                  | 5.89         |               |
 | 02/11/2024          | 1533          | BM SAN SEBASTIAN DE LOS R, 28703         |              | 31.23         |
 
@@ -118,7 +117,8 @@ git push origin new-feature
 ---
 
 ## 🛡️ License
-This project is licensed under the MIT License 📜. Feel free to use, modify, and share it! Check the LICENSE file for more details.
+This project is licensed under the MIT License 📜. Feel free to use, modify, and share it! Check the [MIT License](https://opensource.org/licenses/MIT)
+file for more details.
 
 ---
 
