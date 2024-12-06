@@ -95,6 +95,38 @@ pytest -s
 
 ---
 
+### 📥 Downloading the PDF from Bankinter
+
+To use this tool, you first need to download your VISA statement in PDF format from the Bankinter online banking portal. Follow these steps:
+
+1. **Log in to Bankinter Online Banking**:
+   - Open your browser and go to [Bankinter Online Banking](https://www.bankinter.com).
+   - Enter your credentials to log in.
+
+2. **Navigate to the VISA Section**:
+   - Once logged in, go to the section for your **VISA card statements**.
+   - You can find this under the "Cards" or "VISA" menu, depending on your account setup.
+
+3. **Select the Statement Period**:
+   - Choose the specific period for which you want to download the statement (e.g., "November 2024").
+   - Ensure the period matches the one you want to process.
+
+4. **Download the PDF**:
+   - Click on the option to download the statement as a PDF file.
+   - Save the file locally on your computer in an easily accessible location.
+
+5. **Verify the PDF**:
+   - Ensure the file is in PDF format and contains the transaction details.
+   - Avoid renaming the file to something generic like `document.pdf`. Use descriptive names like `bankinter_statement_nov_2024.pdf`.
+
+6. **Ready to Process**:
+   - Use the downloaded PDF with this tool by running the command:
+     ```bash
+     bankinter-visa-extractor <path_to_pdf> <path_to_csv>
+     ```
+
+---
+
 ## 🤝 Contributing
 We welcome contributions! 🎉 If you'd like to help, follow these steps:
 
